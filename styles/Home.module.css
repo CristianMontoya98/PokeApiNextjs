@@ -3,10 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: -webkit-linear-gradient(bottom left, #c31432  0%, #240b36 100%);
+  background: rgb(26, 25, 25);
+  /* background: -webkit-linear-gradient(bottom left, #c31432  0%, #240b36 100%);
   background: -moz-linear-gradient(bottom left, #c31432  0%, #240b36 100%);
   background: -o-linear-gradient(bottom left, #c31432  0%, #240b36 100%);
-  background: linear-gradient(to top right, #c31432  0%, #000000 100%);
+  background: linear-gradient(to top right, #c31432  0%, #000000 100%); */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#43389F', endColorstr='#4ec6ca',GradientType=1 ); 
 }
 .container h1{

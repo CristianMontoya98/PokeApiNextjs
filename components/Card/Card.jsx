@@ -1,7 +1,7 @@
 
 import styles from './card.module.css'
 function Card(props) { 
-    const { pokemon } = props;
+    const { pokemon, setPokemon, setSelected } = props;
     const colors = {
         fire: "#FF4141",
         grass: "#5DF64E",
@@ -20,15 +20,19 @@ function Card(props) {
         ghost: "#9B9797",
         ice: "#A1CBC7",
         dark: "#243A3A"
-      };
+    };
+    
+    const openCard = () => {
+        setSelected(true);
+        setPokemon(pokemon);
+    }
     return (
-        <div className={styles.card} style={{ backgroundColor: colors[pokemon.type] }}>
+        <div className={styles.card} style={{ backgroundColor: colors[pokemon.type] }} onClick={()=>openCard()}>
         <p className={styles.card__id}>{pokemon.id}</p>
         <div className={styles.imgContainer}>
           <img src={pokemon.img} alt={pokemon.name} />
         </div>
         <p>{pokemon.name}</p>
-        <p>{pokemon.type}</p>
       </div>
     )
 
