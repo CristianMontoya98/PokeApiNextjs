@@ -19,6 +19,19 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 900px;
-  width: 50%;
 }
 
+@media(max-width:1300px){
+  .container__visualizer{
+    flex-direction: column-reverse;
+
+  }
+  .cardsContainer{
+    margin-top: 10em;
+  }
+  }
+  @media(min-width:1300px){
+    .cardsContainer{
+      width: 50%;
+    }
+  }
